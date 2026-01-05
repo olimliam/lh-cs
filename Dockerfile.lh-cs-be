@@ -1,0 +1,49 @@
+# syntax=docker/dockerfile:1.4
+
+FROM node:21-alpine AS base
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+ENV CI=true
+RUN corepack enable
+
+# 1) deps stage: 의존성 설치 전용 (캐시 극대화)
+FROM base AS deps
+WORKDIR /usr/src/app
+
+# 루트 + 공통 패키지들
+COPY --link package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+COPY --link configs ./configs
+COPY --link packages ./packages
+
+# lh-cs-be 워크스페이스를 pnpm이 인식할 수 있게 package.json만 미리 복사
+RUN mkdir -p apps/api/lh-cs-be
+COPY --link apps/api/lh-cs-be/package.json ./apps/api/lh-cs-be/package.json
+
+# pnpm store를 BuildKit 캐시 마운트로 사용
+RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store \
+    pnpm config set store-dir /pnpm/store && \
+    pnpm install --frozen-lockfile --ignore-scripts
+
+# 2) build stage: 실제 앱 소스 + 빌드
+FROM deps AS build
+# 이제 전체 소스 복사 (자주 바뀌는 코드)
+COPY --link apps ./apps
+
+RUN pnpm \
+  --filter @packages/shared \
+  --filter lh-cs-be \
+  build
+
+# 3) production stage: 런타임용 이미지
+FROM base AS production
+WORKDIR /prod
+
+COPY --link --from=build /usr/src/app/apps/api/lh-cs-be ./apps/api/lh-cs-be
+COPY --link --from=build /usr/src/app/configs           ./configs
+COPY --link --from=build /usr/src/app/packages          ./packages
+COPY --link --from=deps  /usr/src/app/node_modules      ./node_modules
+COPY --link --from=deps  /usr/src/app/package.json      ./package.json
+COPY --link --from=deps  /usr/src/app/pnpm-lock.yaml    ./pnpm-lock.yaml
+
+EXPOSE 8080
+CMD ["pnpm", "--filter", "lh-cs-be", "start:prod"]

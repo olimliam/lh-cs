@@ -1,0 +1,2 @@
+pnpm --filter lh-cs-fe build:dev
+pnpm --filter lh-cs-be test

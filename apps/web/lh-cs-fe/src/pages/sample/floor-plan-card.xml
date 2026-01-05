@@ -1,0 +1,264 @@
+[default]
+<?xml version="1.0" encoding="UTF-8"?>
+<?figml version="1.0"?>
+<instance id="1268:22840" name="Frame_2147228415" expanded="true" cornerRadius="4" maskType="ALPHA" x="0" y="0" width="126" height="125" layoutMode="VERTICAL" paddingBottom="10" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="12" clipsContent="true" type="INSTANCE">
+  <children>
+    <Frame id="I1268:22840;1268:21071" name="Frame_2147228837" maskType="ALPHA" x="0" y="0" width="126" height="33" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" paddingLeft="10" paddingRight="10" paddingTop="6" paddingBottom="6" horizontalPadding="10" verticalPadding="6" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="12" type="FRAME">
+      <children>
+        <Text id="I1268:22840;1268:21688" name="_1A_" maskType="ALPHA" x="10" y="6" width="37" height="21" layoutSizingHorizontal="HUG" fontSize="16" fontWeight="500" hyperlink="" characters="21㎡" type="TEXT" textAlignHorizontal="CENTER" textAlignVertical="TOP" textAutoResize="WIDTH_AND_HEIGHT">
+          <effects>
+            <effect type="DROP_SHADOW" radius="12" spread="0" visible="false" blendMode="NORMAL" showShadowBehindNode="false" color="#000000">
+              <offset x="0" y="4" />
+            </effect>
+          </effects>
+          <fills>
+            <fill blendMode="NORMAL" color="#ffffff" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <fontName family="Pretendard" style="Medium" />
+          <letterSpacing value="0" unit="PERCENT" />
+          <lineHeight value="129.99999523162842" unit="PERCENT" />
+        </Text>
+        <Frame_2147228275 id="I1268:22840;1268:22439" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="100" y="8.5" width="16" height="16" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" counterAxisAlignItems="CENTER" itemSpacing="10.363631248474121" type="INSTANCE">
+          <children>
+            <Frame id="I1268:22840;1268:22439;22:5893" name="Field___basic" cornerRadius="48" maskType="ALPHA" x="0" y="0" width="16" height="16" layoutMode="HORIZONTAL" paddingLeft="12.658434867858887" paddingRight="12.658434867858887" paddingTop="10.54869556427002" paddingBottom="10.54869556427002" horizontalPadding="12.658434867858887" verticalPadding="10.54869556427002" primaryAxisSizingMode="FIXED" counterAxisAlignItems="CENTER" itemSpacing="4.219478130340576" type="FRAME">
+              <strokes>
+                <stroke blendMode="NORMAL" color="#ffffff" />
+              </strokes>
+              <fills>
+                <fill opacity="0.05000000074505806" blendMode="NORMAL" color="#ffffff" />
+              </fills>
+              <constraints horizontal="MIN" vertical="MIN" />
+            </Frame>
+          </children>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <variantProperties Property_1="Default" />
+          <mainComponent id="22:5895" />
+          <componentProperties>
+            <Property_1 type="VARIANT" value="Default" />
+          </componentProperties>
+        </Frame_2147228275>
+      </children>
+      <fills>
+        <fill blendMode="NORMAL" color="#999999" />
+      </fills>
+      <constraints horizontal="MIN" vertical="MIN" />
+    </Frame>
+    <Frame id="I1268:22840;22:5458" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="28" y="45" width="70" height="70" layoutMode="VERTICAL" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" itemSpacing="4" type="FRAME">
+      <children>
+        <Frame id="I1268:22840;1268:15371" name="Frame_2147228831" maskType="ALPHA" x="0" y="0" width="70" height="70" layoutAlign="STRETCH" constrainProportions="true" layoutSizingHorizontal="FILL" clipsContent="true" type="FRAME">
+          <fills>
+            <fill type="IMAGE" scaleMode="FILL" imageHash="3b55e45c6c9e0ad3979efce3f49ca5adf097a415" scalingFactor="0.5" blendMode="NORMAL">
+              <imageTransform matrix="1,0,0,0,1,0" />
+              <filters exposure="0" contrast="0" saturation="0" temperature="0" tint="0" highlights="0" shadows="0" />
+            </fill>
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+        </Frame>
+      </children>
+      <constraints horizontal="MIN" vertical="MIN" />
+    </Frame>
+  </children>
+  <fills>
+    <fill opacity="0.20000000298023224" blendMode="NORMAL" color="#999999" />
+  </fills>
+  <constraints horizontal="MIN" vertical="MIN" />
+  <variantProperties Property_1="Default" />
+  <mainComponent id="22:5502" />
+  <componentProperties>
+    <Property_1 type="VARIANT" value="Default" />
+  </componentProperties>
+  <overrides>
+    <override id="1268:22840">
+      <overriddenFields>
+        <overriddenField value="height" index="0" />
+        <overriddenField value="name" index="1" />
+        <overriddenField value="reactions" index="2" />
+        <overriddenField value="width" index="3" />
+      </overriddenFields>
+    </override>
+    <override id="I1268:22840;1268:21688">
+      <overriddenFields>
+        <overriddenField value="characters" index="0" />
+        <overriddenField value="styledTextSegments" index="1" />
+      </overriddenFields>
+    </override>
+  </overrides>
+</instance>
+
+[hover]
+<?xml version="1.0" encoding="UTF-8"?>
+<?figml version="1.0"?>
+<component id="1268:22920" name="Property_1_hover" cornerRadius="4" maskType="ALPHA" x="20" y="165" width="126" height="125" layoutMode="VERTICAL" paddingBottom="10" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="12" clipsContent="true" componentPropertyDefinitions="" type="COMPONENT">
+  <children>
+    <Frame id="1268:22921" name="Frame_2147228837" maskType="ALPHA" x="0" y="0" width="126" height="33" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" paddingLeft="10" paddingRight="10" paddingTop="6" paddingBottom="6" horizontalPadding="10" verticalPadding="6" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="12" type="FRAME">
+      <children>
+        <Text id="1268:22922" name="_1A_" maskType="ALPHA" x="10" y="6" width="38" height="21" layoutSizingHorizontal="HUG" fontSize="16" fontWeight="500" hyperlink="" characters="31㎡" type="TEXT" textAlignHorizontal="CENTER" textAlignVertical="TOP" textAutoResize="WIDTH_AND_HEIGHT">
+          <effects>
+            <effect type="DROP_SHADOW" radius="12" spread="0" visible="false" blendMode="NORMAL" showShadowBehindNode="false" color="#000000">
+              <offset x="0" y="4" />
+            </effect>
+          </effects>
+          <fills>
+            <fill blendMode="NORMAL" color="#ffffff" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <fontName family="Pretendard" style="Medium" />
+          <letterSpacing value="0" unit="PERCENT" />
+          <lineHeight value="129.99999523162842" unit="PERCENT" />
+        </Text>
+        <Frame_2147228275 id="1268:22923" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="100" y="8.5" width="16" height="16" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" counterAxisAlignItems="CENTER" itemSpacing="10.363631248474121" type="INSTANCE">
+          <children>
+            <Frame id="I1268:22923;934:24474" name="Field___basic" cornerRadius="48" maskType="ALPHA" x="0" y="0" width="16" height="16" layoutMode="HORIZONTAL" paddingLeft="12.658434867858887" paddingRight="12.658434867858887" paddingTop="10.54869556427002" paddingBottom="10.54869556427002" horizontalPadding="12.658434867858887" verticalPadding="10.54869556427002" primaryAxisSizingMode="FIXED" counterAxisAlignItems="CENTER" itemSpacing="4.219478130340576" type="FRAME">
+              <strokes>
+                <stroke blendMode="NORMAL" color="#ffffff" />
+              </strokes>
+              <fills>
+                <fill opacity="0.30000001192092896" blendMode="NORMAL" color="#ffffff" />
+              </fills>
+              <constraints horizontal="MIN" vertical="MIN" />
+            </Frame>
+          </children>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <variantProperties Property_1="hover" />
+          <mainComponent id="934:24473" />
+          <componentProperties>
+            <Property_1 type="VARIANT" value="hover" />
+          </componentProperties>
+          <overrides>
+            <override id="1268:22923">
+              <overriddenFields>
+                <overriddenField value="name" index="0" />
+              </overriddenFields>
+            </override>
+          </overrides>
+        </Frame_2147228275>
+      </children>
+      <fills>
+        <fill blendMode="NORMAL" color="#666666" />
+      </fills>
+      <constraints horizontal="MIN" vertical="MIN" />
+    </Frame>
+    <Frame id="1268:22924" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="28" y="45" width="70" height="70" layoutMode="VERTICAL" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" itemSpacing="4" type="FRAME">
+      <children>
+        <Frame id="1268:22925" name="Frame_2147228831" maskType="ALPHA" x="0" y="0" width="70" height="70" layoutAlign="STRETCH" constrainProportions="true" layoutSizingHorizontal="FILL" clipsContent="true" type="FRAME">
+          <fills>
+            <fill type="IMAGE" scaleMode="FILL" imageHash="3b55e45c6c9e0ad3979efce3f49ca5adf097a415" scalingFactor="0.5" blendMode="NORMAL">
+              <imageTransform matrix="1,0,0,0,1,0" />
+              <filters exposure="0" contrast="0" saturation="0" temperature="0" tint="0" highlights="0" shadows="0" />
+            </fill>
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+        </Frame>
+      </children>
+      <constraints horizontal="MIN" vertical="MIN" />
+    </Frame>
+  </children>
+  <fills>
+    <fill opacity="0.20000000298023224" blendMode="NORMAL" color="#666666" />
+  </fills>
+  <effects>
+    <effect type="DROP_SHADOW" radius="12" spread="0" blendMode="NORMAL" showShadowBehindNode="false" color="#000000">
+      <offset x="0" y="4" />
+    </effect>
+  </effects>
+  <constraints horizontal="MIN" vertical="MIN" />
+  <variantProperties Property_1="hover" />
+</component>
+
+[selected]
+<?xml version="1.0" encoding="UTF-8"?>
+<?figml version="1.0"?>
+<component id="1268:22927" name="Property_1_selected" expanded="true" cornerRadius="4" maskType="ALPHA" x="20" y="310" width="126" height="125" layoutMode="VERTICAL" paddingBottom="10" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="12" clipsContent="true" componentPropertyDefinitions="" type="COMPONENT">
+  <children>
+    <Frame id="1268:22928" name="Frame_2147228837" maskType="ALPHA" x="0" y="0" width="126" height="33" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" paddingLeft="10" paddingRight="10" paddingTop="6" paddingBottom="6" horizontalPadding="10" verticalPadding="6" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="12" type="FRAME">
+      <children>
+        <Text id="1268:22929" name="_1A_" maskType="ALPHA" x="10" y="6" width="38" height="21" layoutSizingHorizontal="HUG" fontSize="16" fontWeight="500" hyperlink="" characters="31㎡" type="TEXT" textAlignHorizontal="CENTER" textAlignVertical="TOP" textAutoResize="WIDTH_AND_HEIGHT">
+          <effects>
+            <effect type="DROP_SHADOW" radius="12" spread="0" visible="false" blendMode="NORMAL" showShadowBehindNode="false" color="#000000">
+              <offset x="0" y="4" />
+            </effect>
+          </effects>
+          <fills>
+            <fill blendMode="NORMAL" color="#ffffff" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <fontName family="Pretendard" style="Medium" />
+          <letterSpacing value="0" unit="PERCENT" />
+          <lineHeight value="129.99999523162842" unit="PERCENT" />
+        </Text>
+        <Frame_2147228275 id="1268:22930" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="100" y="8.5" width="16" height="16" layoutSizingHorizontal="HUG" layoutMode="HORIZONTAL" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="10.363631248474121" type="INSTANCE">
+          <children>
+            <Frame id="I1268:22930;22:5898" name="Field___basic" cornerRadius="48" maskType="ALPHA" x="0" y="0" width="16" height="16" layoutMode="HORIZONTAL" paddingLeft="12.658434867858887" paddingRight="12.658434867858887" paddingTop="10.54869556427002" paddingBottom="10.54869556427002" horizontalPadding="12.658434867858887" verticalPadding="10.54869556427002" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="4.219478130340576" type="FRAME">
+              <children>
+                <Frame id="I1268:22930;22:5904" name="mingcute_check-fill" maskType="ALPHA" x="0" y="0" width="16" height="16" constrainProportions="true" clipsContent="true" type="FRAME">
+                  <children>
+                    <Ellipse id="I1268:22930;22:7546" name="Ellipse_176" maskType="ALPHA" x="4" y="4" width="8" height="8" type="ELLIPSE">
+                      <fills>
+                        <fill blendMode="NORMAL" color="#ffffff" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                      <arcData startingAngle="0" endingAngle="6.2831854820251465" innerRadius="0" />
+                    </Ellipse>
+                  </children>
+                  <fills>
+                    <fill visible="false" blendMode="NORMAL" color="#ffffff" />
+                  </fills>
+                  <constraints horizontal="MIN" vertical="MIN" />
+                </Frame>
+              </children>
+              <strokes>
+                <stroke blendMode="NORMAL" color="#ffffff" />
+              </strokes>
+              <fills>
+                <fill opacity="0.4000000059604645" blendMode="NORMAL" color="#ffffff" />
+              </fills>
+              <constraints horizontal="MIN" vertical="MIN" />
+            </Frame>
+          </children>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <variantProperties Property_1="selected" />
+          <mainComponent id="22:5897" />
+          <componentProperties>
+            <Property_1 type="VARIANT" value="selected" />
+          </componentProperties>
+          <overrides>
+            <override id="1268:22930">
+              <overriddenFields>
+                <overriddenField value="name" index="0" />
+              </overriddenFields>
+            </override>
+          </overrides>
+        </Frame_2147228275>
+      </children>
+      <fills>
+        <fill blendMode="NORMAL" color="#333333" />
+      </fills>
+      <constraints horizontal="MIN" vertical="MIN" />
+    </Frame>
+    <Frame id="1268:22931" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="28" y="45" width="70" height="70" layoutMode="VERTICAL" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" itemSpacing="4" type="FRAME">
+      <children>
+        <Frame id="1268:22932" name="Frame_2147228831" maskType="ALPHA" x="0" y="0" width="70" height="70" layoutAlign="STRETCH" constrainProportions="true" layoutSizingHorizontal="FILL" clipsContent="true" type="FRAME">
+          <fills>
+            <fill type="IMAGE" scaleMode="FILL" imageHash="3b55e45c6c9e0ad3979efce3f49ca5adf097a415" scalingFactor="0.5" blendMode="NORMAL">
+              <imageTransform matrix="1,0,0,0,1,0" />
+              <filters exposure="0" contrast="0" saturation="0" temperature="0" tint="0" highlights="0" shadows="0" />
+            </fill>
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+        </Frame>
+      </children>
+      <constraints horizontal="MIN" vertical="MIN" />
+    </Frame>
+  </children>
+  <fills>
+    <fill opacity="0.20000000298023224" blendMode="NORMAL" color="#333333" />
+  </fills>
+  <effects>
+    <effect type="DROP_SHADOW" radius="12" spread="0" blendMode="NORMAL" showShadowBehindNode="false" color="#000000">
+      <offset x="0" y="4" />
+    </effect>
+  </effects>
+  <constraints horizontal="MIN" vertical="MIN" />
+  <variantProperties Property_1="selected" />
+</component>

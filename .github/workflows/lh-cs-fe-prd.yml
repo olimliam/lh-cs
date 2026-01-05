@@ -1,0 +1,72 @@
+name: Build and Deploy lh-cs-fe to K8s
+on:
+  push:
+    branches:
+      - lh-cs/prd
+    paths:
+      - 'apps/web/lh-cs-fe/**'
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-22.04
+    environment: lh-cs-fe-prd
+    env:
+      IMAGE_REPO: elypecs-solution-fe
+      IMAGE_NAME: lh-cs-fe-prd
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      # pnpm + Node 세팅 (테스트나 lint를 여기서 돌리고 싶으면 이 단계 이용)
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.3
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build common resources
+        run: pnpm run preinstall
+      - name: Create .env.prd file
+        run: |
+          echo "VITE_TOUR_CDN_URL=${{ vars.VITE_TOUR_CDN_URL }}" >> ./apps/web/lh-cs-fe/.env.prd
+          echo "VITE_WS_URL=${{ vars.VITE_WS_URL }}" >> ./apps/web/lh-cs-fe/.env.prd
+          echo "VITE_BASE_URL=${{ vars.VITE_BASE_URL }}" >> ./apps/web/lh-cs-fe/.env.prd
+          echo "VITE_SELF_URL=${{ vars.VITE_SELF_URL }}" >> ./apps/web/lh-cs-fe/.env.prd
+          echo "VITE_VISION_AI_CHILD_PATH=${{ vars.VITE_VISION_AI_CHILD_PATH }}" >> ./apps/web/lh-cs-fe/.env.prd
+          echo "VITE_IS_PREFER_CURRENT_TAB=${{ vars.VITE_IS_PREFER_CURRENT_TAB }}" >> ./apps/web/lh-cs-fe/.env.prd
+          echo "VITE_CONSULTATION_MAX_ROOM_COUNT=${{ vars.VITE_CONSULTATION_MAX_ROOM_COUNT }}" >> ./apps/web/lh-cs-fe/.env.prd
+          echo "VITE_MAX_FILE_UPLOAD_SIZE_MB=${{ vars.VITE_MAX_FILE_UPLOAD_SIZE_MB }}" >> ./apps/web/lh-cs-fe/.env.prd
+          echo "VITE_AI_PDF_URL=${{ vars.VITE_AI_PDF_URL }}" >> ./apps/web/lh-cs-fe/.env.prd
+          echo "VITE_WEBRTC_SERVER_IP=${{ secrets.VITE_WEBRTC_SERVER_IP }}" >> ./apps/web/lh-cs-fe/.env.prd
+          echo "VITE_WEBRTC_SERVER_USERNAME=${{ secrets.VITE_WEBRTC_SERVER_USERNAME }}" >> ./apps/web/lh-cs-fe/.env.prd
+          echo "VITE_WEBRTC_SERVER_CREDENTIAL=${{ secrets.VITE_WEBRTC_SERVER_CREDENTIAL }}" >> ./apps/web/lh-cs-fe/.env.prd
+      # 실제 FE build는 Dockerfile.lh-cs-fe 안에서 수행 (multi-stage)
+      # 필요하면 여기서 pnpm --filter lh-cs-fe build:prd 추가 가능
+      - name: Set image tag
+        id: image_tag
+        run: |
+          echo "TAG=lh-cs-fe-prd-v${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
+      # 1) NCP NCR 로그인 (AccessKey / SecretKey 사용)
+      - name: Login to NCP Container Registry
+        run: |
+          echo "${{ secrets.NCLOUD_SECRET_KEY }}" | \
+          docker login "${{ vars.CONTAINER_REGISTRY }}" \
+            -u "${{ secrets.NCLOUD_ACCESS_KEY }}" \
+            --password-stdin
+      # 2) Docker 이미지 빌드
+      - name: Build Docker image
+        run: |
+          IMAGE="${{ vars.CONTAINER_REGISTRY }}/${{ env.IMAGE_REPO }}:${{ steps.image_tag.outputs.TAG }}"
+          echo "IMAGE=$IMAGE"
+          docker build \
+            -f Dockerfile.lh-cs-fe \
+            -t "$IMAGE" \
+            .
+      # 3) Docker push
+      - name: Push Docker image
+        run: |
+          IMAGE="${{ vars.CONTAINER_REGISTRY }}/${{ env.IMAGE_REPO }}:${{ steps.image_tag.outputs.TAG }}"
+          docker push "$IMAGE"

@@ -1,0 +1,12 @@
+{
+  "codeConnect": {
+    "include": [
+      "src/widgets/**/*.figma.{ts,tsx}",
+      "src/shared/**/*.figma.{ts,tsx}",
+      "src/features/**/*.figma.{ts,tsx}"
+    ],
+    "exclude": ["node_modules/**", "dist/**", "build/**"],
+    "output": "./figma-code-connect",
+    "parser": "react"
+  }
+}

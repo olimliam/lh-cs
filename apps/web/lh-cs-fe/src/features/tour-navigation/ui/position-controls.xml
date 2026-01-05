@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?figml version="1.0"?>
+<frame id="1068:67276" name="Frame_2147227726" cornerRadius="8" maskType="ALPHA" x="13.5" y="0" width="392" height="375" layoutSizingHorizontal="HUG" layoutMode="VERTICAL" paddingLeft="16" paddingRight="16" paddingTop="16" paddingBottom="16" horizontalPadding="16" verticalPadding="16" counterAxisSizingMode="AUTO" itemSpacing="20" clipsContent="true" type="FRAME">
+  <children>
+    <Frame id="1068:67277" name="Frame_2147227670" maskType="ALPHA" x="16" y="16" width="360" height="24" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="24" type="FRAME">
+      <children>
+        <Frame id="1068:67278" name="Frame_2147227671" maskType="ALPHA" x="0" y="0" width="102" height="24" layoutSizingHorizontal="HUG" layoutMode="HORIZONTAL" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="4" type="FRAME">
+          <children>
+            <ic-place-w id="1068:67279" name="ic-place-w" maskType="ALPHA" x="0" y="0" width="24" height="24" layoutMode="HORIZONTAL" paddingLeft="2" paddingRight="2" paddingTop="2" paddingBottom="2" horizontalPadding="2" verticalPadding="2" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="INSTANCE">
+              <children>
+                <Frame id="I1068:67279;1068:67233" name="____" maskType="ALPHA" x="2" y="2" width="20" height="20" layoutAlign="STRETCH" layoutGrow="1" layoutSizingHorizontal="FILL" layoutSizingVertical="FILL" clipsContent="true" type="FRAME">
+                  <children>
+                    <Vector id="I1068:67279;1068:67234" name="Vector" maskType="ALPHA" x="1.6666667461395264" y="0.8333333730697632" width="16.66666603088379" height="18.33333396911621" type="VECTOR">
+                      <fills>
+                        <fill blendMode="NORMAL" color="#333333" />
+                      </fills>
+                      <constraints horizontal="SCALE" vertical="SCALE" />
+                    </Vector>
+                  </children>
+                  <constraints horizontal="MIN" vertical="MIN" />
+                </Frame>
+              </children>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <variantProperties Property_1="Default" />
+              <mainComponent id="1068:67235" />
+              <componentProperties>
+                <Property_1 type="VARIANT" value="Default" />
+              </componentProperties>
+            </ic-place-w>
+            <Text id="1068:67280" name="_709___" maskType="ALPHA" x="28" y="0" width="74" height="24" layoutSizingHorizontal="HUG" fontSize="20" fontWeight="700" hyperlink="" characters="위치 이동" type="TEXT" textAlignVertical="TOP" textAutoResize="WIDTH_AND_HEIGHT">
+              <fills>
+                <fill blendMode="NORMAL" color="#333333" />
+              </fills>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <fontName family="Pretendard" style="Bold" />
+              <letterSpacing value="0" unit="PERCENT" />
+              <lineHeight unit="AUTO" />
+            </Text>
+          </children>
+          <constraints horizontal="MIN" vertical="MIN" />
+        </Frame>
+        <location_close id="1068:67281" name="location_close" maskType="ALPHA" x="336" y="0" width="24" height="24" constrainProportions="true" clipsContent="true" type="INSTANCE">
+          <children>
+            <Vector id="I1068:67281;1095:70012" name="Vector" maskType="ALPHA" x="6" y="6" width="12" height="12" constrainProportions="true" type="VECTOR">
+              <fills>
+                <fill blendMode="NORMAL" color="#111111" />
+              </fills>
+              <constraints horizontal="SCALE" vertical="CENTER" />
+            </Vector>
+          </children>
+          <fills>
+            <fill visible="false" blendMode="NORMAL" color="#ffffff" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <variantProperties Property_1="default" />
+          <mainComponent id="1095:70014" />
+          <componentProperties>
+            <Property_1 type="VARIANT" value="default" />
+          </componentProperties>
+        </location_close>
+      </children>
+      <constraints horizontal="MIN" vertical="MIN" />
+    </Frame>
+    <Frame id="1068:67524" name="Frame_2147227671" cornerRadius="4" maskType="ALPHA" x="16" y="60" width="360" height="33" layoutSizingHorizontal="HUG" layoutMode="HORIZONTAL" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" type="FRAME">
+      <children>
+        <location_filter id="1068:67548" name="location_filter" cornerRadius="4" maskType="ALPHA" x="0" y="0" width="120" height="33" layoutMode="HORIZONTAL" paddingLeft="10" paddingRight="10" paddingTop="6" paddingBottom="6" horizontalPadding="10" verticalPadding="6" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="INSTANCE">
+          <children>
+            <Text id="I1068:67548;1068:67631" name="_709___" maskType="ALPHA" x="46" y="6" width="28" height="21" layoutSizingHorizontal="HUG" fontSize="16" fontWeight="700" hyperlink="" characters="건축" type="TEXT" textAlignVertical="TOP" textAutoResize="WIDTH_AND_HEIGHT">
+              <fills>
+                <fill blendMode="NORMAL" color="#f5f5f5" />
+              </fills>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <fontName family="Pretendard" style="Bold" />
+              <letterSpacing value="0" unit="PERCENT" />
+              <lineHeight value="129.99999523162842" unit="PERCENT" />
+            </Text>
+          </children>
+          <fills>
+            <fill blendMode="NORMAL" color="#333333" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <variantProperties Property_1="selected" />
+          <mainComponent id="1068:67630" />
+          <componentProperties>
+            <Property_1 type="VARIANT" value="selected" />
+          </componentProperties>
+          <overrides>
+            <override id="1068:67548">
+              <overriddenFields>
+                <overriddenField value="height" index="0" />
+                <overriddenField value="primaryAxisSizingMode" index="1" />
+                <overriddenField value="width" index="2" />
+              </overriddenFields>
+            </override>
+            <override id="I1068:67548;1068:67631">
+              <overriddenFields>
+                <overriddenField value="characters" index="0" />
+                <overriddenField value="styledTextSegments" index="1" />
+              </overriddenFields>
+            </override>
+          </overrides>
+        </location_filter>
+        <location_filter id="1068:67551" name="location_filter" cornerRadius="4" maskType="ALPHA" x="120" y="0" width="120" height="33" layoutMode="HORIZONTAL" paddingLeft="10" paddingRight="10" paddingTop="6" paddingBottom="6" horizontalPadding="10" verticalPadding="6" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="INSTANCE">
+          <children>
+            <Text id="I1068:67551;1068:67543" name="_709___" maskType="ALPHA" x="46" y="6" width="28" height="21" layoutSizingHorizontal="HUG" fontSize="16" fontWeight="700" hyperlink="" characters="기계" type="TEXT" textAlignVertical="TOP" textAutoResize="WIDTH_AND_HEIGHT">
+              <fills>
+                <fill blendMode="NORMAL" color="#333333" />
+              </fills>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <fontName family="Pretendard" style="Bold" />
+              <letterSpacing value="0" unit="PERCENT" />
+              <lineHeight value="129.99999523162842" unit="PERCENT" />
+            </Text>
+          </children>
+          <fills>
+            <fill visible="false" blendMode="NORMAL" color="#ffffff" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <variantProperties Property_1="Default" />
+          <mainComponent id="1068:67544" />
+          <componentProperties>
+            <Property_1 type="VARIANT" value="Default" />
+          </componentProperties>
+          <overrides>
+            <override id="1068:67551">
+              <overriddenFields>
+                <overriddenField value="height" index="0" />
+                <overriddenField value="primaryAxisSizingMode" index="1" />
+                <overriddenField value="width" index="2" />
+              </overriddenFields>
+            </override>
+            <override id="I1068:67551;1068:67543">
+              <overriddenFields>
+                <overriddenField value="characters" index="0" />
+                <overriddenField value="styledTextSegments" index="1" />
+              </overriddenFields>
+            </override>
+          </overrides>
+        </location_filter>
+        <location_filter id="1068:67554" name="location_filter" cornerRadius="4" maskType="ALPHA" x="240" y="0" width="120" height="33" layoutMode="HORIZONTAL" paddingLeft="10" paddingRight="10" paddingTop="6" paddingBottom="6" horizontalPadding="10" verticalPadding="6" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="INSTANCE">
+          <children>
+            <Text id="I1068:67554;1068:67543" name="_709___" maskType="ALPHA" x="26" y="6" width="68" height="21" layoutSizingHorizontal="HUG" fontSize="16" fontWeight="700" hyperlink="" characters="전기 · 통신" type="TEXT" textAlignVertical="TOP" textAutoResize="WIDTH_AND_HEIGHT">
+              <fills>
+                <fill blendMode="NORMAL" color="#333333" />
+              </fills>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <fontName family="Pretendard" style="Bold" />
+              <letterSpacing value="0" unit="PERCENT" />
+              <lineHeight value="129.99999523162842" unit="PERCENT" />
+            </Text>
+          </children>
+          <fills>
+            <fill visible="false" blendMode="NORMAL" color="#ffffff" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <variantProperties Property_1="Default" />
+          <mainComponent id="1068:67544" />
+          <componentProperties>
+            <Property_1 type="VARIANT" value="Default" />
+          </componentProperties>
+          <overrides>
+            <override id="1068:67554">
+              <overriddenFields>
+                <overriddenField value="height" index="0" />
+                <overriddenField value="primaryAxisSizingMode" index="1" />
+                <overriddenField value="width" index="2" />
+              </overriddenFields>
+            </override>
+          </overrides>
+        </location_filter>
+      </children>
+      <fills>
+        <fill blendMode="NORMAL" color="#f5f5f5" />
+      </fills>
+      <constraints horizontal="MIN" vertical="MIN" />
+    </Frame>
+    <Frame id="1068:67591" name="Frame_2147228824" cornerRadius="4" maskType="ALPHA" x="16" y="113" width="360" height="246" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" clipsContent="true" type="FRAME">
+      <children>
+        <Frame id="1068:67625" name="Frame_2147228825" maskType="ALPHA" x="0" y="0" width="360" height="246" layoutGrow="1" layoutSizingHorizontal="FILL" layoutMode="VERTICAL" type="FRAME">
+          <children>
+            <location_list id="1068:67579" name="location_list" strokeWeight="" maskType="ALPHA" x="0" y="0" width="360" height="41" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" strokeTopWeight="0" strokeLeftWeight="0" strokeRightWeight="0" layoutMode="HORIZONTAL" paddingLeft="12" paddingRight="12" paddingTop="10" paddingBottom="10" horizontalPadding="12" verticalPadding="10" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="51" type="INSTANCE">
+              <children>
+                <Frame id="I1068:67579;1068:67566" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="12" y="10" width="336" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="6" type="FRAME">
+                  <children>
+                    <Frame id="I1068:67579;1068:67567" name="navigation-btn" cornerRadius="2" maskType="ALPHA" x="0" y="2.5" width="16" height="16" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="FRAME">
+                      <children>
+                        <Text id="I1068:67579;1068:67568" name="_" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="0" y="0" width="16" height="16" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="12" fontWeight="700" hyperlink="" characters="1" type="TEXT" textAlignHorizontal="CENTER" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+                          <fills>
+                            <fill blendMode="NORMAL" color="#111111" />
+                          </fills>
+                          <constraints horizontal="MIN" vertical="MIN" />
+                          <fontName family="Pretendard" style="Bold" />
+                          <letterSpacing value="0" unit="PERCENT" />
+                          <lineHeight value="129.99999523162842" unit="PERCENT" />
+                        </Text>
+                      </children>
+                      <fills>
+                        <fill opacity="0.20000000298023224" blendMode="NORMAL" color="#111111" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                    </Frame>
+                    <Text id="I1068:67579;1068:67569" name="________" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="22" y="0" width="314" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="16" fontWeight="500" hyperlink="" characters="실외기실 루버창" type="TEXT" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+                      <fills>
+                        <fill blendMode="NORMAL" color="#111111" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                      <fontName family="Pretendard" style="Medium" />
+                      <letterSpacing value="0" unit="PERCENT" />
+                      <lineHeight value="129.99999523162842" unit="PERCENT" />
+                    </Text>
+                  </children>
+                  <constraints horizontal="MIN" vertical="MIN" />
+                </Frame>
+              </children>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <variantProperties Property_1="Default" />
+              <mainComponent id="1068:67572" />
+              <componentProperties>
+                <Property_1 type="VARIANT" value="Default" />
+              </componentProperties>
+              <overrides>
+                <override id="1068:67579">
+                  <overriddenFields>
+                    <overriddenField value="height" index="0" />
+                    <overriddenField value="width" index="1" />
+                  </overriddenFields>
+                </override>
+              </overrides>
+            </location_list>
+            <Frame_2147228422 id="1068:67585" name="Frame_2147228422" strokeWeight="" maskType="ALPHA" x="0" y="41" width="360" height="41" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" strokeTopWeight="0" strokeLeftWeight="0" strokeRightWeight="0" layoutMode="HORIZONTAL" paddingLeft="12" paddingRight="12" paddingTop="10" paddingBottom="10" horizontalPadding="12" verticalPadding="10" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="51" type="INSTANCE">
+              <children>
+                <Frame id="I1068:67585;1068:67566" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="12" y="10" width="336" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="6" type="FRAME">
+                  <children>
+                    <Frame id="I1068:67585;1068:67567" name="navigation-btn" cornerRadius="2" maskType="ALPHA" x="0" y="2.5" width="16" height="16" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="FRAME">
+                      <children>
+                        <Text id="I1068:67585;1068:67568" name="_" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="0" y="0" width="16" height="16" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="12" fontWeight="700" hyperlink="" characters="2" type="TEXT" textAlignHorizontal="CENTER" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+                          <fills>
+                            <fill blendMode="NORMAL" color="#111111" />
+                          </fills>
+                          <constraints horizontal="MIN" vertical="MIN" />
+                          <fontName family="Pretendard" style="Bold" />
+                          <letterSpacing value="0" unit="PERCENT" />
+                          <lineHeight value="129.99999523162842" unit="PERCENT" />
+                        </Text>
+                      </children>
+                      <fills>
+                        <fill opacity="0.20000000298023224" blendMode="NORMAL" color="#111111" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                    </Frame>
+                    <Text id="I1068:67585;1068:67569" name="________" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="22" y="0" width="314" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="16" fontWeight="500" hyperlink="" characters="에어컨 매립배관" type="TEXT" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+                      <fills>
+                        <fill blendMode="NORMAL" color="#111111" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                      <fontName family="Pretendard" style="Medium" />
+                      <letterSpacing value="0" unit="PERCENT" />
+                      <lineHeight value="129.99999523162842" unit="PERCENT" />
+                    </Text>
+                  </children>
+                  <constraints horizontal="MIN" vertical="MIN" />
+                </Frame>
+              </children>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <variantProperties Property_1="Default" />
+              <mainComponent id="1068:67572" />
+              <componentProperties>
+                <Property_1 type="VARIANT" value="Default" />
+              </componentProperties>
+              <overrides>
+                <override id="1068:67585">
+                  <overriddenFields>
+                    <overriddenField value="height" index="0" />
+                    <overriddenField value="name" index="1" />
+                    <overriddenField value="width" index="2" />
+                  </overriddenFields>
+                </override>
+                <override id="I1068:67585;1068:67568">
+                  <overriddenFields>
+                    <overriddenField value="characters" index="0" />
+                    <overriddenField value="styledTextSegments" index="1" />
+                  </overriddenFields>
+                </override>
+                <override id="I1068:67585;1068:67569">
+                  <overriddenFields>
+                    <overriddenField value="characters" index="0" />
+                    <overriddenField value="styledTextSegments" index="1" />
+                  </overriddenFields>
+                </override>
+              </overrides>
+            </Frame_2147228422>
+            <Frame_2147228423 id="1068:67592" name="Frame_2147228423" strokeWeight="" maskType="ALPHA" x="0" y="82" width="360" height="41" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" strokeTopWeight="0" strokeLeftWeight="0" strokeRightWeight="0" layoutMode="HORIZONTAL" paddingLeft="12" paddingRight="12" paddingTop="10" paddingBottom="10" horizontalPadding="12" verticalPadding="10" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="51" type="INSTANCE">
+              <children>
+                <Frame id="I1068:67592;1068:67566" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="12" y="10" width="336" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="6" type="FRAME">
+                  <children>
+                    <Frame id="I1068:67592;1068:67567" name="navigation-btn" cornerRadius="2" maskType="ALPHA" x="0" y="2.5" width="16" height="16" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="FRAME">
+                      <children>
+                        <Text id="I1068:67592;1068:67568" name="_" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="0" y="0" width="16" height="16" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="12" fontWeight="700" hyperlink="" characters="6" type="TEXT" textAlignHorizontal="CENTER" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+                          <fills>
+                            <fill blendMode="NORMAL" color="#111111" />
+                          </fills>
+                          <constraints horizontal="MIN" vertical="MIN" />
+                          <fontName family="Pretendard" style="Bold" />
+                          <letterSpacing value="0" unit="PERCENT" />
+                          <lineHeight value="129.99999523162842" unit="PERCENT" />
+                        </Text>
+                      </children>
+                      <fills>
+                        <fill opacity="0.20000000298023224" blendMode="NORMAL" color="#111111" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                    </Frame>
+                    <Text id="I1068:67592;1068:67569" name="________" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="22" y="0" width="314" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="16" fontWeight="500" hyperlink="" characters="양변기 로우탱크 내부" type="TEXT" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+                      <fills>
+                        <fill blendMode="NORMAL" color="#111111" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                      <fontName family="Pretendard" style="Medium" />
+                      <letterSpacing value="0" unit="PERCENT" />
+                      <lineHeight value="129.99999523162842" unit="PERCENT" />
+                    </Text>
+                  </children>
+                  <constraints horizontal="MIN" vertical="MIN" />
+                </Frame>
+              </children>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <variantProperties Property_1="Default" />
+              <mainComponent id="1068:67572" />
+              <componentProperties>
+                <Property_1 type="VARIANT" value="Default" />
+              </componentProperties>
+              <overrides>
+                <override id="1068:67592">
+                  <overriddenFields>
+                    <overriddenField value="height" index="0" />
+                    <overriddenField value="name" index="1" />
+                    <overriddenField value="width" index="2" />
+                  </overriddenFields>
+                </override>
+                <override id="I1068:67592;1068:67568">
+                  <overriddenFields>
+                    <overriddenField value="characters" index="0" />
+                    <overriddenField value="styledTextSegments" index="1" />
+                  </overriddenFields>
+                </override>
+                <override id="I1068:67592;1068:67569">
+                  <overriddenFields>
+                    <overriddenField value="characters" index="0" />
+                    <overriddenField value="styledTextSegments" index="1" />
+                  </overriddenFields>
+                </override>
+              </overrides>
+            </Frame_2147228423>
+            <Frame_2147228424 id="1068:67598" name="Frame_2147228424" strokeWeight="" maskType="ALPHA" x="0" y="123" width="360" height="41" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" strokeTopWeight="0" strokeLeftWeight="0" strokeRightWeight="0" layoutMode="HORIZONTAL" paddingLeft="12" paddingRight="12" paddingTop="10" paddingBottom="10" horizontalPadding="12" verticalPadding="10" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="51" type="INSTANCE">
+              <children>
+                <Frame id="I1068:67598;1068:67566" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="12" y="10" width="336" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="6" type="FRAME">
+                  <children>
+                    <Frame id="I1068:67598;1068:67567" name="navigation-btn" cornerRadius="2" maskType="ALPHA" x="0" y="2.5" width="16" height="16" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="FRAME">
+                      <children>
+                        <Text id="I1068:67598;1068:67568" name="_" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="0" y="0" width="16" height="16" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="12" fontWeight="700" hyperlink="" characters="4" type="TEXT" textAlignHorizontal="CENTER" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+                          <fills>
+                            <fill blendMode="NORMAL" color="#111111" />
+                          </fills>
+                          <constraints horizontal="MIN" vertical="MIN" />
+                          <fontName family="Pretendard" style="Bold" />
+                          <letterSpacing value="0" unit="PERCENT" />
+                          <lineHeight value="129.99999523162842" unit="PERCENT" />
+                        </Text>
+                      </children>
+                      <fills>
+                        <fill opacity="0.20000000298023224" blendMode="NORMAL" color="#111111" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                    </Frame>
+                    <Text id="I1068:67598;1068:67569" name="________" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="22" y="0" width="314" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="16" fontWeight="500" hyperlink="" characters="발코니 난간(형상)" type="TEXT" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+                      <fills>
+                        <fill blendMode="NORMAL" color="#111111" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                      <fontName family="Pretendard" style="Medium" />
+                      <letterSpacing value="0" unit="PERCENT" />
+                      <lineHeight value="129.99999523162842" unit="PERCENT" />
+                    </Text>
+                  </children>
+                  <constraints horizontal="MIN" vertical="MIN" />
+                </Frame>
+              </children>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <variantProperties Property_1="Default" />
+              <mainComponent id="1068:67572" />
+              <componentProperties>
+                <Property_1 type="VARIANT" value="Default" />
+              </componentProperties>
+              <overrides>
+                <override id="1068:67598">
+                  <overriddenFields>
+                    <overriddenField value="height" index="0" />
+                    <overriddenField value="name" index="1" />
+                    <overriddenField value="width" index="2" />
+                  </overriddenFields>
+                </override>
+                <override id="I1068:67598;1068:67568">
+                  <overriddenFields>
+                    <overriddenField value="characters" index="0" />
+                    <overriddenField value="styledTextSegments" index="1" />
+                  </overriddenFields>
+                </override>
+                <override id="I1068:67598;1068:67569">
+                  <overriddenFields>
+                    <overriddenField value="characters" index="0" />
+                    <overriddenField value="styledTextSegments" index="1" />
+                  </overriddenFields>
+                </override>
+              </overrides>
+            </Frame_2147228424>
+            <Frame_2147228425 id="1068:67604" name="Frame_2147228425" strokeWeight="" maskType="ALPHA" x="0" y="164" width="360" height="41" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" strokeTopWeight="0" strokeLeftWeight="0" strokeRightWeight="0" layoutMode="HORIZONTAL" paddingLeft="12" paddingRight="12" paddingTop="10" paddingBottom="10" horizontalPadding="12" verticalPadding="10" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="51" type="INSTANCE">
+              <children>
+                <Frame id="I1068:67604;1068:67566" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="12" y="10" width="336" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="6" type="FRAME">
+                  <children>
+                    <Frame id="I1068:67604;1068:67567" name="navigation-btn" cornerRadius="2" maskType="ALPHA" x="0" y="2.5" width="16" height="16" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="FRAME">
+                      <children>
+                        <Text id="I1068:67604;1068:67568" name="_" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="0" y="0" width="16" height="16" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="12" fontWeight="700" hyperlink="" characters="5" type="TEXT" textAlignHorizontal="CENTER" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+                          <fills>
+                            <fill blendMode="NORMAL" color="#111111" />
+                          </fills>
+                          <constraints horizontal="MIN" vertical="MIN" />
+                          <fontName family="Pretendard" style="Bold" />
+                          <letterSpacing value="0" unit="PERCENT" />
+                          <lineHeight value="129.99999523162842" unit="PERCENT" />
+                        </Text>
+                      </children>
+                      <fills>
+                        <fill opacity="0.20000000298023224" blendMode="NORMAL" color="#111111" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                    </Frame>
+                    <Text id="I1068:67604;1068:67569" name="________" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="22" y="0" width="314" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="16" fontWeight="500" hyperlink="" characters="현관문 클로저(형상)" type="TEXT" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+                      <fills>
+                        <fill blendMode="NORMAL" color="#111111" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                      <fontName family="Pretendard" style="Medium" />
+                      <letterSpacing value="0" unit="PERCENT" />
+                      <lineHeight value="129.99999523162842" unit="PERCENT" />
+                    </Text>
+                  </children>
+                  <constraints horizontal="MIN" vertical="MIN" />
+                </Frame>
+              </children>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <variantProperties Property_1="Default" />
+              <mainComponent id="1068:67572" />
+              <componentProperties>
+                <Property_1 type="VARIANT" value="Default" />
+              </componentProperties>
+              <overrides>
+                <override id="1068:67604">
+                  <overriddenFields>
+                    <overriddenField value="height" index="0" />
+                    <overriddenField value="name" index="1" />
+                    <overriddenField value="width" index="2" />
+                  </overriddenFields>
+                </override>
+                <override id="I1068:67604;1068:67568">
+                  <overriddenFields>
+                    <overriddenField value="characters" index="0" />
+                    <overriddenField value="styledTextSegments" index="1" />
+                  </overriddenFields>
+                </override>
+                <override id="I1068:67604;1068:67569">
+                  <overriddenFields>
+                    <overriddenField value="characters" index="0" />
+                    <overriddenField value="styledTextSegments" index="1" />
+                  </overriddenFields>
+                </override>
+              </overrides>
+            </Frame_2147228425>
+            <Frame_2147228426 id="1068:67610" name="Frame_2147228426" strokeWeight="" maskType="ALPHA" x="0" y="205" width="360" height="41" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" strokeTopWeight="0" strokeLeftWeight="0" strokeRightWeight="0" layoutMode="HORIZONTAL" paddingLeft="12" paddingRight="12" paddingTop="10" paddingBottom="10" horizontalPadding="12" verticalPadding="10" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="51" type="INSTANCE">
+              <children>
+                <Frame id="I1068:67610;1068:67566" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="12" y="10" width="336" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="6" type="FRAME">
+                  <children>
+                    <Frame id="I1068:67610;1068:67567" name="navigation-btn" cornerRadius="2" maskType="ALPHA" x="0" y="2.5" width="16" height="16" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="FRAME">
+                      <children>
+                        <Text id="I1068:67610;1068:67568" name="_" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="0" y="0" width="16" height="16" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="12" fontWeight="700" hyperlink="" characters="6" type="TEXT" textAlignHorizontal="CENTER" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+                          <fills>
+                            <fill blendMode="NORMAL" color="#111111" />
+                          </fills>
+                          <constraints horizontal="MIN" vertical="MIN" />
+                          <fontName family="Pretendard" style="Bold" />
+                          <letterSpacing value="0" unit="PERCENT" />
+                          <lineHeight value="129.99999523162842" unit="PERCENT" />
+                        </Text>
+                      </children>
+                      <fills>
+                        <fill opacity="0.20000000298023224" blendMode="NORMAL" color="#111111" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                    </Frame>
+                    <Text id="I1068:67610;1068:67569" name="________" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="22" y="0" width="314" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="16" fontWeight="500" hyperlink="" characters="욕실 점검구(형상)" type="TEXT" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+                      <fills>
+                        <fill blendMode="NORMAL" color="#111111" />
+                      </fills>
+                      <constraints horizontal="MIN" vertical="MIN" />
+                      <fontName family="Pretendard" style="Medium" />
+                      <letterSpacing value="0" unit="PERCENT" />
+                      <lineHeight value="129.99999523162842" unit="PERCENT" />
+                    </Text>
+                  </children>
+                  <constraints horizontal="MIN" vertical="MIN" />
+                </Frame>
+              </children>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <variantProperties Property_1="Default" />
+              <mainComponent id="1068:67572" />
+              <componentProperties>
+                <Property_1 type="VARIANT" value="Default" />
+              </componentProperties>
+              <overrides>
+                <override id="1068:67610">
+                  <overriddenFields>
+                    <overriddenField value="height" index="0" />
+                    <overriddenField value="name" index="1" />
+                    <overriddenField value="width" index="2" />
+                  </overriddenFields>
+                </override>
+                <override id="I1068:67610;1068:67568">
+                  <overriddenFields>
+                    <overriddenField value="characters" index="0" />
+                    <overriddenField value="styledTextSegments" index="1" />
+                  </overriddenFields>
+                </override>
+                <override id="I1068:67610;1068:67569">
+                  <overriddenFields>
+                    <overriddenField value="characters" index="0" />
+                    <overriddenField value="styledTextSegments" index="1" />
+                  </overriddenFields>
+                </override>
+              </overrides>
+            </Frame_2147228426>
+          </children>
+          <constraints horizontal="MIN" vertical="MIN" />
+        </Frame>
+        <scroll id="1068:67622" name="scroll" maskType="ALPHA" x="348" y="0" width="12" height="136" layoutPositioning="ABSOLUTE" layoutSizingHorizontal="HUG" layoutMode="HORIZONTAL" paddingLeft="4" paddingRight="4" paddingTop="8" paddingBottom="8" horizontalPadding="4" verticalPadding="8" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="10" type="INSTANCE">
+          <children>
+            <Rectangle id="I1068:67622;1068:67620" name="Rectangle_3468536" maskType="ALPHA" x="4" y="8" width="4" height="120" cornerRadius="130" type="RECTANGLE">
+              <fills>
+                <fill opacity="0.800000011920929" blendMode="NORMAL" color="#cccccc" />
+              </fills>
+              <constraints horizontal="MIN" vertical="MIN" />
+            </Rectangle>
+          </children>
+          <fills>
+            <fill visible="false" blendMode="NORMAL" color="#ffffff" />
+          </fills>
+          <constraints horizontal="MAX" vertical="MIN" />
+          <variantProperties Property_1="Default" />
+          <mainComponent id="1068:67621" />
+          <componentProperties>
+            <Property_1 type="VARIANT" value="Default" />
+          </componentProperties>
+          <overrides>
+            <override id="1068:67622">
+              <overriddenFields>
+                <overriddenField value="layoutPositioning" index="0" />
+              </overriddenFields>
+            </override>
+          </overrides>
+        </scroll>
+      </children>
+      <fills>
+        <fill blendMode="NORMAL" color="#f5f5f5" />
+      </fills>
+      <constraints horizontal="MIN" vertical="MIN" />
+    </Frame>
+  </children>
+  <strokes>
+    <stroke blendMode="NORMAL" color="#ffffff" />
+  </strokes>
+  <fills>
+    <fill blendMode="NORMAL" color="#ffffff" />
+  </fills>
+  <constraints horizontal="MIN" vertical="MIN" />
+</frame>

@@ -1,0 +1,56 @@
+name: Build and Deploy lh-cs-be to K8s
+
+on:
+  push:
+    branches:
+      - lh-cs/prd
+    paths:
+      - 'apps/api/lh-cs-be/**'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-22.04
+    environment: lh-cs-be-prd
+
+    env:
+      IMAGE_REPO: elypecs-solution-be
+      IMAGE_NAME: lh-cs-be-prd
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 1) 이미지 태그 설정
+      - name: Set image tag
+        id: image_tag
+        run: |
+          echo "TAG=lh-cs-be-prd-v${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
+
+      # 2) NCP 컨테이너 레지스트리 로그인
+      - name: Login to NCP Container Registry
+        env:
+          NCP_ACCESS_KEY: ${{ secrets.NCLOUD_ACCESS_KEY }}
+          NCP_SECRET_KEY: ${{ secrets.NCLOUD_SECRET_KEY }}
+        run: |
+          echo "$NCP_SECRET_KEY" | docker login "${{ vars.CONTAINER_REGISTRY }}" \
+            -u "$NCP_ACCESS_KEY" \
+            --password-stdin
+
+      # 3) Docker Buildx 설정 (BuildKit + 캐시 활용)
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # 4) 캐시를 활용해서 Docker 이미지 빌드 + 푸시
+      - name: Build and push Docker image (with cache)
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.lh-cs-be
+          platforms: linux/amd64
+          push: true
+          tags: |
+            ${{ vars.CONTAINER_REGISTRY }}/${{ env.IMAGE_REPO }}:${{ steps.image_tag.outputs.TAG }}
+
+          # 🔑 GitHub Actions 전용 BuildKit 캐시
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

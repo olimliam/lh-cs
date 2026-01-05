@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>IFrame</title>
+</head>
+<body>
+  <h1>IFrame</h1>
+  <p id="nick">닉네임: -</p>
+  <button id="req">새 EPT 요청</button>
+
+  <script>
+    // 쿼리로 받은 parentOrigin, apiBase
+    const q = new URLSearchParams(location.search);
+    const parentOrigin = q.get('parentOrigin') || location.origin;
+    const apiBase      = q.get('apiBase')      || location.origin;
+
+    const nickEl = document.getElementById('nick');
+
+    // 부모에게 준비됨 알리기
+    window.parent.postMessage({ type: 'IFRAME_READY' }, parentOrigin);
+
+    // 부모 메시지 수신(EPT 전달 받음)
+    window.addEventListener('message', async (e) => {
+      if (e.origin !== parentOrigin) return;
+      const { type, token } = e.data || {};
+      if (type === 'EPT' && token) {
+        try {
+          const st = await redeem(token);         // EPT → ST 교환
+          const nickname = await getNickname(st); // 닉네임 조회
+          nickEl.textContent = `닉네임: ${nickname}`;
+          window.parent.postMessage({ type: 'NICKNAME_RESULT', nickname }, parentOrigin);
+        } catch (err) {
+          console.error(err);
+        }
+      }
+    });
+
+    // 수동 요청 버튼
+    document.getElementById('req').onclick = () => {
+      window.parent.postMessage({ type: 'REQUEST_NEW_EPT' }, parentOrigin);
+    };
+
+    async function redeem(ept) {
+      const res = await fetch(new URL('/external/v1/vision-ai/redeem', apiBase), {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${ept}` }
+      });
+      if (!res.ok) throw new Error('redeem 실패');
+      const data = await res.json();
+      return data.data.visionAiSessionToken;
+    }
+
+    async function getNickname(st) {
+      const res = await fetch(new URL('/external/v1/vision-ai/profile', apiBase), {
+        headers: { Authorization: `Bearer ${st}` }
+      });
+      if (!res.ok) throw new Error('닉네임 조회 실패');
+      const data = await res.json();
+      return data.data.nickname; // { data: { nickname: "..." } }
+    }
+  </script>
+</body>
+</html>

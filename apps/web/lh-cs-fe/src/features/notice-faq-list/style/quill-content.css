@@ -1,0 +1,91 @@
+/* apps/web/lh-cs-fe/src/features/notice-faq-list/style/quill-content.css */
+
+/**
+ * Quill 에디터 출력 콘텐츠 스타일
+ * ContentRenderer에서 렌더링되는 HTML에 적용
+ */
+
+/* ✅ Quill 폰트 클래스 */
+.quill-content .ql-font-monospace {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.quill-content .ql-font-serif {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.quill-content .ql-font-sans-serif {
+  font-family:
+    'Pretendard',
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+
+/* ✅ 취소선 */
+.quill-content s,
+.quill-content strike,
+.quill-content del {
+  text-decoration: line-through;
+}
+
+/* ✅ 하이라이트 */
+.quill-content mark {
+  background-color: #ffeb3b;
+  padding: 0 2px;
+}
+
+/* ✅ 코드 블록 */
+.quill-content pre {
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.quill-content code {
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+/* ✅ 인용 */
+.quill-content blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 16px;
+  margin: 16px 0;
+  color: #666;
+}
+
+/* ✅ 링크 */
+.quill-content a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.quill-content a:hover {
+  color: #004499;
+}
+
+/* ✅ 테이블 */
+.quill-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+.quill-content th,
+.quill-content td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.quill-content th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+.landing-content-renderer img {
+  cursor: default;
+}

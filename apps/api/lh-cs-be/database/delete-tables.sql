@@ -1,0 +1,9 @@
+drop table lh_cs__consultation_histories;
+drop table lh_cs__consultations;
+drop table lh_cs__facilities;
+drop table lh_cs__read_consultations;
+drop table lh_cs__tours;
+drop table lh_cs__tour_facilities;
+drop table lh_cs__users;
+drop table lh_cs__refresh_tokens;
+drop table lh_cs__user_sessions;

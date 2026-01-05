@@ -1,0 +1,4 @@
+export enum ContentOwnerType {
+  NOTIFICATION = 'NOTIFICATION',
+  QUESTION_ANSWER = 'QUESTION_ANSWER',
+}

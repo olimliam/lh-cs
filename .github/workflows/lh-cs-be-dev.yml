@@ -1,0 +1,65 @@
+name: Build and Deploy lh-cs-be (dev)
+
+on:
+  push:
+    branches:
+      - lh-cs/dev
+    paths:
+      - 'apps/api/lh-cs-be/**'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-22.04
+    environment: lh-cs-be-dev
+
+    env:
+      AWS_ACCOUNT_ID: 585138906585
+      AWS_REGION: ap-northeast-2
+      ECR_REGISTRY: 585138906585.dkr.ecr.ap-northeast-2.amazonaws.com
+      IMAGE_REPO: elypecs-solution-be
+      IMAGE_NAME: lh-cs-be-dev
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # dev용 태그 생성
+      - name: Set image tag
+        id: image_tag
+        run: |
+          echo "TAG=lh-cs-be-dev-v${GITHUB_RUN_NUMBER}" >> "$GITHUB_OUTPUT"
+
+      # AWS 자격증명 설정 (ECR + EKS 둘 다 이걸로)
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      # ECR 로그인
+      - name: Login to Amazon ECR
+        run: |
+          aws ecr get-login-password --region "${AWS_REGION}" \
+            | docker login \
+                --username AWS \
+                --password-stdin "${ECR_REGISTRY}"
+
+      # Docker Buildx 설정 (BuildKit + 캐시)
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # 🔑 캐시 활용해서 Docker 이미지 빌드 + 푸시
+      - name: Build and push Docker image (with cache)
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.lh-cs-be
+          platforms: linux/amd64
+          push: true
+          tags: |
+            ${{ env.ECR_REGISTRY }}/${{ env.IMAGE_REPO }}:${{ steps.image_tag.outputs.TAG }}
+
+          # GitHub Actions 전용 BuildKit 캐시
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

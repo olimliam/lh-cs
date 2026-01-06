@@ -1,0 +1,208 @@
+[default]
+<?xml version="1.0" encoding="UTF-8"?>
+<?figml version="1.0"?>
+<component id="22:5503" name="Property_1_Default" strokeWeight="" maskType="ALPHA" x="20" y="20" width="453.8778381347656" height="41" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" strokeTopWeight="0" strokeLeftWeight="0" strokeRightWeight="0" layoutMode="HORIZONTAL" paddingLeft="12" paddingRight="12" paddingTop="10" paddingBottom="10" horizontalPadding="12" verticalPadding="10" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="51" componentPropertyDefinitions="" type="COMPONENT">
+  <children>
+    <Frame id="22:5495" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="12" y="10" width="411.8778381347656" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="6" type="FRAME">
+      <children>
+        <Frame id="937:21793" name="navigation-btn" cornerRadius="2" maskType="ALPHA" x="0" y="2.5" width="16" height="16" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="FRAME">
+          <children>
+            <Text id="937:21794" name="_" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="0" y="0" width="16" height="16" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="12" fontWeight="700" hyperlink="" characters="1" type="TEXT" textAlignHorizontal="CENTER" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+              <fills>
+                <fill blendMode="NORMAL" color="#0a2145" />
+              </fills>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <fontName family="Pretendard" style="Bold" />
+              <letterSpacing value="0" unit="PERCENT" />
+              <lineHeight value="129.99999523162842" unit="PERCENT" />
+            </Text>
+          </children>
+          <fills>
+            <fill opacity="0.20000000298023224" blendMode="NORMAL" color="#446aa3" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+        </Frame>
+        <Text id="22:5498" name="____2________" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="22" y="0" width="389.8778381347656" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="16" fontWeight="500" hyperlink="" characters="강화신문2 (마을정비형)" type="TEXT" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+          <fills>
+            <fill blendMode="NORMAL" color="#111111" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <fontName family="Pretendard" style="Medium" />
+          <letterSpacing value="0" unit="PERCENT" />
+          <lineHeight value="129.99999523162842" unit="PERCENT" />
+        </Text>
+      </children>
+      <constraints horizontal="MIN" vertical="MIN" />
+    </Frame>
+    <radio_btn_____ id="934:24518" name="radio_btn_____" strokeWeight="1.1515145301818848" maskType="ALPHA" x="423.8778381347656" y="11.5" width="18" height="18" layoutSizingHorizontal="HUG" layoutMode="HORIZONTAL" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="10.363631248474121" type="INSTANCE">
+      <children>
+        <Frame id="I934:24518;934:24509" name="Field___basic" strokeWeight="0.7489573359489441" cornerRadius="48" maskType="ALPHA" x="0" y="0" width="18" height="18" layoutMode="HORIZONTAL" paddingLeft="12.658434867858887" paddingRight="12.658434867858887" paddingTop="10.54869556427002" paddingBottom="10.54869556427002" horizontalPadding="12.658434867858887" verticalPadding="10.54869556427002" primaryAxisSizingMode="FIXED" counterAxisAlignItems="CENTER" itemSpacing="4.219478130340576" type="FRAME">
+          <strokes>
+            <stroke blendMode="NORMAL" color="#b3b3b3" />
+          </strokes>
+          <constraints horizontal="MIN" vertical="MIN" />
+        </Frame>
+      </children>
+      <constraints horizontal="MIN" vertical="MIN" />
+      <variantProperties Property_1="Default" />
+      <mainComponent id="934:24508" />
+      <componentProperties>
+        <Property_1 type="VARIANT" value="Default" />
+      </componentProperties>
+    </radio_btn_____>
+  </children>
+  <strokes>
+    <stroke blendMode="NORMAL" color="#eeeeee" />
+  </strokes>
+  <fills>
+    <fill blendMode="NORMAL" color="#ffffff" />
+  </fills>
+  <constraints horizontal="MIN" vertical="MIN" />
+  <variantProperties Property_1="Default" />
+</component>
+
+[hover]
+<?xml version="1.0" encoding="UTF-8"?>
+<?figml version="1.0"?>
+<component id="915:19723" name="Property_1_hover" strokeWeight="" maskType="ALPHA" x="20" y="71" width="453.8778381347656" height="41" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" strokeTopWeight="0" strokeLeftWeight="0" strokeRightWeight="0" layoutMode="HORIZONTAL" paddingLeft="12" paddingRight="12" paddingTop="10" paddingBottom="10" horizontalPadding="12" verticalPadding="10" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="51" componentPropertyDefinitions="" type="COMPONENT">
+  <children>
+    <Frame id="915:19724" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="12" y="10" width="411.8778381347656" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="6" type="FRAME">
+      <children>
+        <Frame id="937:22390" name="navigation-btn" cornerRadius="2" maskType="ALPHA" x="0" y="2.5" width="16" height="16" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="FRAME">
+          <children>
+            <Text id="937:22391" name="_" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="0" y="0" width="16" height="16" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="12" fontWeight="700" hyperlink="" characters="1" type="TEXT" textAlignHorizontal="CENTER" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+              <fills>
+                <fill blendMode="NORMAL" color="#0a2145" />
+              </fills>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <fontName family="Pretendard" style="Bold" />
+              <letterSpacing value="0" unit="PERCENT" />
+              <lineHeight value="129.99999523162842" unit="PERCENT" />
+            </Text>
+          </children>
+          <fills>
+            <fill opacity="0.20000000298023224" blendMode="NORMAL" color="#446aa3" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+        </Frame>
+        <Text id="915:19726" name="____2________" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="22" y="0" width="389.8778381347656" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="16" fontWeight="500" hyperlink="" characters="강화신문2 (마을정비형)" type="TEXT" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+          <fills>
+            <fill blendMode="NORMAL" color="#111111" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <fontName family="Pretendard" style="Medium" />
+          <letterSpacing value="0" unit="PERCENT" />
+          <lineHeight value="129.99999523162842" unit="PERCENT" />
+        </Text>
+      </children>
+      <constraints horizontal="MIN" vertical="MIN" />
+    </Frame>
+    <radio_btn_____ id="934:25093" name="radio_btn_____" strokeWeight="1.1515145301818848" maskType="ALPHA" x="423.8778381347656" y="11.5" width="18" height="18" layoutSizingHorizontal="HUG" layoutMode="HORIZONTAL" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="10.363631248474121" type="INSTANCE">
+      <children>
+        <Frame id="I934:25093;934:24511" name="Field___basic" strokeWeight="0.7489573359489441" cornerRadius="48" maskType="ALPHA" x="0" y="0" width="18" height="18" layoutMode="HORIZONTAL" paddingLeft="12.658434867858887" paddingRight="12.658434867858887" paddingTop="10.54869556427002" paddingBottom="10.54869556427002" horizontalPadding="12.658434867858887" verticalPadding="10.54869556427002" primaryAxisSizingMode="FIXED" counterAxisAlignItems="CENTER" itemSpacing="4.219478130340576" type="FRAME">
+          <strokes>
+            <stroke blendMode="NORMAL" color="#1f61c3" />
+          </strokes>
+          <fills>
+            <fill opacity="0.05000000074505806" blendMode="NORMAL" color="#1f61c3" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+        </Frame>
+      </children>
+      <constraints horizontal="MIN" vertical="MIN" />
+      <variantProperties Property_1="hover" />
+      <mainComponent id="934:24510" />
+      <componentProperties>
+        <Property_1 type="VARIANT" value="hover" />
+      </componentProperties>
+    </radio_btn_____>
+  </children>
+  <strokes>
+    <stroke blendMode="NORMAL" color="#eeeeee" />
+  </strokes>
+  <fills>
+    <fill blendMode="NORMAL" color="#f8fbff" />
+  </fills>
+  <constraints horizontal="MIN" vertical="MIN" />
+  <variantProperties Property_1="hover" />
+</component>
+
+[selected]
+<?xml version="1.0" encoding="UTF-8"?>
+<?figml version="1.0"?>
+<component id="22:5885" name="Property_1_selected" strokeWeight="" maskType="ALPHA" x="20" y="122" width="453.8778381347656" height="41" layoutAlign="STRETCH" layoutSizingHorizontal="FILL" strokeTopWeight="0" strokeLeftWeight="0" strokeRightWeight="0" layoutMode="HORIZONTAL" paddingLeft="12" paddingRight="12" paddingTop="10" paddingBottom="10" horizontalPadding="12" verticalPadding="10" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" primaryAxisAlignItems="SPACE_BETWEEN" counterAxisAlignItems="CENTER" itemSpacing="51" componentPropertyDefinitions="" type="COMPONENT">
+  <children>
+    <Frame id="22:5886" name="Frame_2147228275" strokeWeight="1.1515145301818848" maskType="ALPHA" x="12" y="10" width="411.8778381347656" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="6" type="FRAME">
+      <children>
+        <Frame id="937:22393" name="navigation-btn" cornerRadius="2" maskType="ALPHA" x="0" y="2.5" width="16" height="16" layoutMode="HORIZONTAL" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="10" type="FRAME">
+          <children>
+            <Text id="937:22394" name="_" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="0" y="0" width="16" height="16" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="12" fontWeight="700" hyperlink="" characters="1" type="TEXT" textAlignHorizontal="CENTER" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+              <fills>
+                <fill blendMode="NORMAL" color="#0a2145" />
+              </fills>
+              <constraints horizontal="MIN" vertical="MIN" />
+              <fontName family="Pretendard" style="Bold" />
+              <letterSpacing value="0" unit="PERCENT" />
+              <lineHeight value="129.99999523162842" unit="PERCENT" />
+            </Text>
+          </children>
+          <fills>
+            <fill opacity="0.20000000298023224" blendMode="NORMAL" color="#446aa3" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+        </Frame>
+        <Text id="22:5889" name="____2________" maskType="ALPHA" strokeWeight="1.054869532585144" strokeAlign="OUTSIDE" x="22" y="0" width="389.8778381347656" height="21" layoutGrow="1" layoutSizingHorizontal="FILL" fontSize="16" fontWeight="700" hyperlink="" characters="강화신문2 (마을정비형)" type="TEXT" textAlignVertical="TOP" textAutoResize="HEIGHT" textTruncation="ENDING" maxLines="1">
+          <fills>
+            <fill blendMode="NORMAL" color="#0a2145" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+          <fontName family="Pretendard" style="Bold" />
+          <letterSpacing value="0" unit="PERCENT" />
+          <lineHeight value="129.99999523162842" unit="PERCENT" />
+        </Text>
+      </children>
+      <constraints horizontal="MIN" vertical="MIN" />
+    </Frame>
+    <radio_btn_____ id="934:25101" name="radio_btn_____" strokeWeight="1.1515145301818848" maskType="ALPHA" x="423.8778381347656" y="11.5" width="18" height="18" layoutSizingHorizontal="HUG" layoutMode="HORIZONTAL" counterAxisSizingMode="AUTO" counterAxisAlignItems="CENTER" itemSpacing="10.363631248474121" type="INSTANCE">
+      <children>
+        <Frame id="I934:25101;934:24513" name="Field___basic" strokeWeight="0.7489573359489441" cornerRadius="48" maskType="ALPHA" x="0" y="0" width="18" height="18" layoutMode="HORIZONTAL" paddingLeft="12.658434867858887" paddingRight="12.658434867858887" paddingTop="10.54869556427002" paddingBottom="10.54869556427002" horizontalPadding="12.658434867858887" verticalPadding="10.54869556427002" primaryAxisSizingMode="FIXED" primaryAxisAlignItems="CENTER" counterAxisAlignItems="CENTER" itemSpacing="4.219478130340576" type="FRAME">
+          <children>
+            <Frame id="I934:25101;934:24514" name="mingcute_check-fill" maskType="ALPHA" x="-1" y="-1" width="20" height="20" constrainProportions="true" clipsContent="true" type="FRAME">
+              <children>
+                <Ellipse id="I934:25101;934:24515" name="Ellipse_176" maskType="ALPHA" x="5" y="5" width="10" height="10" type="ELLIPSE">
+                  <fills>
+                    <fill blendMode="NORMAL" color="#ffffff" />
+                  </fills>
+                  <constraints horizontal="MIN" vertical="MIN" />
+                  <arcData startingAngle="0" endingAngle="6.2831854820251465" innerRadius="0" />
+                </Ellipse>
+              </children>
+              <fills>
+                <fill visible="false" blendMode="NORMAL" color="#ffffff" />
+              </fills>
+              <constraints horizontal="MIN" vertical="MIN" />
+            </Frame>
+          </children>
+          <fills>
+            <fill blendMode="NORMAL" color="#1f61c3" />
+          </fills>
+          <constraints horizontal="MIN" vertical="MIN" />
+        </Frame>
+      </children>
+      <constraints horizontal="MIN" vertical="MIN" />
+      <variantProperties Property_1="selected" />
+      <mainComponent id="934:24512" />
+      <componentProperties>
+        <Property_1 type="VARIANT" value="selected" />
+      </componentProperties>
+    </radio_btn_____>
+  </children>
+  <strokes>
+    <stroke blendMode="NORMAL" color="#eeeeee" />
+  </strokes>
+  <fills>
+    <fill blendMode="NORMAL" color="#eff5ff" />
+  </fills>
+  <constraints horizontal="MIN" vertical="MIN" />
+  <variantProperties Property_1="selected" />
+</component>

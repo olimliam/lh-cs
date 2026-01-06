@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fe4141;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="btn-icon-inmap-highlight-ac" transform="translate(-2067 -595)">
+    <path id="ic_stars_24px" class="cls-1" d="M11.99,2A10,10,0,1,0,22,12,10,10,0,0,0,11.99,2Zm4.24,16L12,15.45,7.77,18l1.12-4.81L5.16,9.96l4.92-.42L12,5l1.92,4.53,4.92.42-3.73,3.23Z" transform="translate(2065 593)"/>
+    <path id="ic_stars_24px-2" data-name="ic_stars_24px" class="cls-2" d="M16.23,18,12,15.45,7.77,18l1.12-4.81L5.16,9.96l4.92-.42L12,5l1.92,4.53,4.92.42-3.73,3.23Z" transform="translate(2065 593)"/>
+  </g>
+</svg>

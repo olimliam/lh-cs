@@ -1,0 +1,15 @@
+<svg id="btn-icon-inmap-TTS-df" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #54d6c8;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle id="타원_17198" data-name="타원 17198" class="cls-1" cx="10" cy="10" r="10"/>
+  <path id="ic_headset_24px" class="cls-2" d="M8.8,1A5.743,5.743,0,0,0,3,6.684v4.421A1.912,1.912,0,0,0,4.933,13H6.867V7.947H4.289V6.684A4.463,4.463,0,0,1,8.8,2.263a4.463,4.463,0,0,1,4.511,4.421V7.947H10.733V13h1.933A1.912,1.912,0,0,0,14.6,11.105V6.684A5.743,5.743,0,0,0,8.8,1Z" transform="translate(1.2 3)"/>
+</svg>

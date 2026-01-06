@@ -147,7 +147,9 @@ export const validateImageUrl = (url: string): boolean => {
         urlObj.hostname.includes('amazonaws') ||
         urlObj.hostname.includes('cloudfront'))
     );
-  } catch {
+  } catch (error) {
+    // 시큐어 코딩: URL 파싱 실패 시 유효하지 않은 URL로 처리
+    console.debug('[validateImageUrl] URL 파싱 실패:', error);
     return false;
   }
 };

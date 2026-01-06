@@ -1,0 +1,1 @@
+export { VisitorTourPage } from './ui/visitor-tour-page';

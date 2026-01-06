@@ -67,7 +67,11 @@ export class CsrfGuard implements CanActivate {
       this.logger.log('Cookie token:', csrfTokenFromCookie);
 
       // CSRF 공격 감지 시 세션 무효화
-      request.session.destroy(() => {});
+      request.session.destroy((err) => {
+        if (err) {
+          this.logger.error('세션 무효화 실패:', err);
+        }
+      });
 
       throw new ForbiddenException({
         code: AuthErrorCode.CSRF_TOKEN_INVALID,

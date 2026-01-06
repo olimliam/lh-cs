@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="30" viewBox="0 0 80 30">
+    <defs>
+        <linearGradient id="cvaioqkzua" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset=".153" stop-color="#fff" stop-opacity=".847"/>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <path d="m40 0 40 30H0z" transform="rotate(180 40 15)" style="fill:url(#cvaioqkzua)"/>
+</svg>

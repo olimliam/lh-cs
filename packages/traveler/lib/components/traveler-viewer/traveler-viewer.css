@@ -1,0 +1,28 @@
+.traveler-viewer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 캔버스가 화면에 꽉 차도록 설정 */
+.traveler-viewer canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* 로딩 인디케이터 스타일 */
+.traveler-viewer .loading-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 1000;
+}

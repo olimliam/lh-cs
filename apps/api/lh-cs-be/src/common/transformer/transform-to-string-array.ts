@@ -28,8 +28,9 @@ export const transformToStringArray = ({
           )
           .filter((item) => item.length > 0);
       }
-    } catch {
-      // ignore parse errors and fallback below
+    } catch (error) {
+      // 시큐어 코딩: JSON 파싱 실패 시 콤마 구분자로 fallback 처리
+      console.debug('[transformToStringArray] JSON 파싱 실패, 콤마 구분자로 처리:', error);
     }
 
     return trimmed

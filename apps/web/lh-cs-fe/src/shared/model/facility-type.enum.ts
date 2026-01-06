@@ -1,0 +1,5 @@
+export enum FacilityTypeEnum {
+  CONSTRUCTION = 'CONSTRUCTION',
+  MACHINE = 'MACHINE',
+  ELECTRICITY = 'ELECTRICITY',
+}

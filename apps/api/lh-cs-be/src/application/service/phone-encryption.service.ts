@@ -39,7 +39,8 @@ export class PhoneEncryptionService {
         return buf;
       }
     } catch (error) {
-      // fallthrough
+      // 시큐어 코딩: base64 디코딩 실패 시 다른 포맷으로 fallback
+      console.debug('[PhoneEncryptionService] base64 키 파싱 실패, 다른 포맷 시도:', error);
     }
 
     // hex 시도

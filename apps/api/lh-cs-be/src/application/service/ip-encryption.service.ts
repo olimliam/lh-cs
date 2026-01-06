@@ -62,7 +62,8 @@ export class IpEncryptionService {
         return base64;
       }
     } catch (error) {
-      // ignore
+      // 시큐어 코딩: base64 디코딩 실패 시 다른 포맷으로 fallback
+      console.debug('[IpEncryptionService] base64 키 파싱 실패, 다른 포맷 시도:', error);
     }
 
     if (/^[0-9a-fA-F]+$/.test(trimmed) && trimmed.length === 64) {

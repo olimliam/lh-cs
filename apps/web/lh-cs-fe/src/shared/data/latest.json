@@ -1,0 +1,143 @@
+{
+  "id": "yogqa68os9f3zk1y",
+  "defaultThemeID": 0,
+  "projectID": "1",
+  "startingSceneID": 574141,
+  "title": "ES0300_Guckkasten_Lobby",
+  "allSceneTags": "",
+  "chatting": false,
+  "contactForm": false,
+  "createAt": "2025-07-15T09:20:56.071Z",
+  "createType": "PLUGIN",
+  "description": "",
+  "fov": 1.5,
+  "geometries": [],
+  "insight": false,
+  "isLimitPitch": false,
+  "isLimitYaw": false,
+  "isSample": false,
+  "language": "ko",
+  "logo": "",
+  "markers": [
+    {
+      "id": 463289,
+      "tourID": "yogqa68os9f3zk1y",
+      "title": "1",
+      "description": "",
+      "displayType": 1
+    },
+    {
+      "id": 463290,
+      "tourID": "yogqa68os9f3zk1y",
+      "title": "2",
+      "description": "",
+      "displayType": 1
+    },
+    {
+      "id": 463292,
+      "tourID": "yogqa68os9f3zk1y",
+      "title": "M_1",
+      "description": "",
+      "displayType": 2
+    },
+    {
+      "id": 463293,
+      "tourID": "yogqa68os9f3zk1y",
+      "title": "M_2",
+      "description": "",
+      "displayType": 2
+    },
+    {
+      "id": 463294,
+      "tourID": "yogqa68os9f3zk1y",
+      "title": "M_3",
+      "description": "",
+      "displayType": 2
+    },
+    {
+      "id": 463295,
+      "tourID": "yogqa68os9f3zk1y",
+      "title": "M_4",
+      "description": "",
+      "displayType": 2
+    },
+    {
+      "id": 463296,
+      "tourID": "yogqa68os9f3zk1y",
+      "title": "M_5",
+      "description": "",
+      "displayType": 2
+    },
+    {
+      "id": 463297,
+      "tourID": "yogqa68os9f3zk1y",
+      "title": "M_6",
+      "description": "",
+      "displayType": 2
+    },
+    {
+      "id": 463298,
+      "tourID": "yogqa68os9f3zk1y",
+      "title": "3",
+      "description": "",
+      "displayType": 1
+    },
+    {
+      "id": 463299,
+      "tourID": "yogqa68os9f3zk1y",
+      "title": "viewer_01",
+      "description": "",
+      "displayType": 5
+    },
+    {
+      "id": 463300,
+      "tourID": "yogqa68os9f3zk1y",
+      "title": "viewer_02",
+      "description": "",
+      "displayType": 4
+    }
+  ],
+  "menus": [],
+  "minimaps": [],
+  "moveButtonType": "circle",
+  "moveCircleSize": 50,
+  "notices": [],
+  "openingText": "",
+  "permission": 0,
+  "scenes": [
+    {
+      "id": 574141,
+      "minimapID": 0,
+      "title": "ELYPECSSceneBP1",
+      "description": "",
+      "usedTag": ""
+    },
+    {
+      "id": 579551,
+      "minimapID": 0,
+      "title": "ELYPECSSceneBP1",
+      "description": "",
+      "usedTag": ""
+    },
+    {
+      "id": 579552,
+      "minimapID": 0,
+      "title": "ELYPECSSceneBP1",
+      "description": "",
+      "usedTag": ""
+    }
+  ],
+  "speed": 0,
+  "tag": "",
+  "themes": [
+    {
+      "id": 26203,
+      "title": "Lobby",
+      "order": 0,
+      "geometryID": 53962,
+      "defaultGeometryID": 0
+    }
+  ],
+  "thumbnailURL": "https://cdn.zipview.kr/backstage/tours/yogqa68os9f3zk1y/thumbnail/yogqa68os9f3zk1y_12ahadsxpd.png",
+  "updateAt": "2025-08-13T09:14:14.792Z"
+}
